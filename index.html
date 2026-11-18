@@ -1,1 +1,235 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Khushi | Happy Princess Day 👑</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="floating-hearts" id="hearts"></div>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="crown">👑</div>
+  <p class="eyebrow">A ROYAL CELEBRATION FOR</p>
+
+  <h1>Happy Princess Day</h1>
+  <h2>Khushi 💗</h2>
+
+  <p class="intro">
+    Hey Bestie! Today is all about you.
+    So get ready for your royal surprise! ✨
+  </p>
+
+  <button onclick="goTo('about')">Enter Your Kingdom 👑</button>
+
+  <div class="scroll-text">SCROLL TO EXPLORE ↓</div>
+</section>
+
+
+<!-- PHOTO SECTION -->
+<section class="about" id="about">
+
+  <p class="tag">OUR SPECIAL PRINCESS</p>
+  <h2>Meet The Princess</h2>
+
+  <div class="photo-frame">
+    <div class="photo-crown">👑</div>
+    <img src="khushi.jpg" alt="Khushi - Our Princess"
+         onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex'">
+
+    <div id="photoFallback" class="photo-fallback">
+      <span>🌸</span>
+      <p>Khushi's photo goes here!</p>
+      <small>Upload khushi.jpg in the same folder</small>
+    </div>
+  </div>
+
+  <h3 class="name-script">Princess Khushi</h3>
+
+  <p class="about-text">
+    Not just a princess, but a whole package of cuteness,
+    craziness, attitude and unlimited entertainment! 😂
+  </p>
+
+</section>
+
+
+<!-- QUALITIES -->
+<section class="qualities">
+
+  <p class="tag">WHY YOU ARE SPECIAL</p>
+  <h2>Khushi's Royal Qualities 💕</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <span>🌷</span>
+      <h3>Beautiful Smile</h3>
+      <p>Your smile can make an ordinary day special.</p>
+    </div>
+
+    <div class="card">
+      <span>😂</span>
+      <h3>Drama Queen</h3>
+      <p>Gussa hona toh jaise tumhara favourite hobby hai!</p>
+    </div>
+
+    <div class="card">
+      <span>💖</span>
+      <h3>Caring Heart</h3>
+      <p>Behind that attitude is a genuinely caring person.</p>
+    </div>
+
+    <div class="card">
+      <span>👑</span>
+      <h3>Royal Attitude</h3>
+      <p>Madam ki personality hi alag level ki hai!</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FUNNY SECTION -->
+<section class="funny">
+
+  <p class="tag">SOME IMPORTANT FACTS 😂</p>
+  <h2>Official Khushi Report</h2>
+
+  <div class="report">
+    <p>👑 Princess Level: <strong>1000%</strong></p>
+    <p>😤 Gussa Level: <strong>Unlimited</strong></p>
+    <p>😂 Cuteness Level: <strong>Top Secret</strong></p>
+    <p>💗 Bestie Status: <strong>Irreplaceable</strong></p>
+    <p>🎀 Nakhras: <strong>Premium Edition</strong></p>
+  </div>
+
+  <p class="warning">
+    Warning: Is princess se behas karna apne risk par! 😂
+  </p>
+
+</section>
+
+
+<!-- LETTER -->
+<section class="letter-section">
+
+  <p class="tag">A LITTLE MESSAGE FROM MY SIDE</p>
+  <h2>A Letter For You 💌</h2>
+
+  <div class="envelope" id="envelope">
+
+    <div class="envelope-front">
+      <span>💌</span>
+      <h3>For My Bestie Khushi</h3>
+      <p>A little letter just for you...</p>
+      <button onclick="openLetter(event)">Open Your Letter 💗</button>
+    </div>
+
+  </div>
+
+  <div class="letter-content" id="letterContent">
+
+    <h2>Dear Bestie Khushi, 🌸</h2>
+
+    <p>
+      Happy Princess Day, Bestie! 👑
+    </p>
+
+    <p>
+      Sabse pehle toh ek baat...
+      tum jitna khud ko special samajhti ho,
+      usse kahin zyada special ho! 😂💗
+    </p>
+
+    <p>
+      Kabhi tumhari funny baatein, kabhi chhoti-chhoti
+      baaton par gussa, kabhi tumhara caring nature...
+      ye sab tumhe ek alag hi personality deta hai.
+    </p>
+
+    <p>
+      I just want you to know that you deserve all
+      the happiness, success and beautiful moments
+      in this world.
+    </p>
+
+    <p>
+      Hamesha khush rehna, apne dreams complete karna,
+      aur apni cute si smile kabhi mat khona.
+    </p>
+
+    <p>
+      Aur haan, princess hone ka matlab ye nahi ki
+      har baat par royal order dena zaroori hai! 😂
+    </p>
+
+    <p class="highlight">
+      Stay the same crazy, caring and amazing Khushi.
+      Never stop shining! ✨
+    </p>
+
+    <div class="sign">
+      With lots of wishes,<br>
+      <span>Your Bestu Sujal 💗</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SURPRISE -->
+<section class="surprise">
+
+  <p class="tag">ONE LAST SURPRISE</p>
+  <h2>Hey Princess, Ready? 🎁</h2>
+
+  <p>
+    Tumhare liye ek royal announcement hai...
+  </p>
+
+  <button onclick="royalSurprise()">Reveal My Surprise 👑</button>
+
+  <div id="surpriseBox">
+    <div class="big-crown">👑</div>
+    <h2>Official Royal Certificate</h2>
+    <h3>Princess Khushi</h3>
+
+    <p>
+      Is website ke royal kingdom ki officially
+      cutest, funniest and most special princess! 💗
+    </p>
+
+    <div class="certificate">
+      Awarded with unlimited happiness,
+      beautiful memories and lifetime friendship wishes! 🌷
+    </div>
+
+    <h3 class="last-line">Keep Smiling, Bestie! ✨</h3>
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div>👑 💗 🌸</div>
+  <h2>Made With Love</h2>
+  <p>Especially for Princess Khushi</p>
+  <h3>Your Bestu Sujal</h3>
+  <p class="footer-small">Happy Princess Day 2026 ✨</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
